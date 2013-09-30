@@ -49,6 +49,6 @@ describe "Project Listing" do
       expect(page).to have_selector('.navbar ul li.active a', text: "Projects")
     end   
 
-    end
+    
   end
 end

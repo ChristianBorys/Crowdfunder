@@ -1,0 +1,21 @@
+<%= form_for [@pledges, @projects] do |f| %>
+	<% unless f.object.errors.empty? %>
+  		<div class="alert alert-error">
+    		<strong>Try again after fixing the following things:</strong><br/>
+    	<ul>
+      		<% f.object.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+	<div class="field">
+		<%= f.label :project %>
+		<%= f.text_field :project %>
+	</div> 
+	<div class="field">
+		<%= f.label :amount %>
+		<%= f.text_field :amount %>
+	</div>
+<% end %>

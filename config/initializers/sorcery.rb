@@ -147,7 +147,7 @@ Rails.application.config.sorcery.configure do |config|
     # Default: `[:username]`
     #
     # user.username_attribute_names =
-
+    user.username_attribute_names = [:email]
 
     # change *virtual* password attribute, the one which is used until an encrypted one is generated.
     # Default: `:password`
@@ -159,7 +159,7 @@ Rails.application.config.sorcery.configure do |config|
     # Default: `false`
     #
     # user.downcase_username_before_authenticating =
-
+    user.downcase_username_before_authenticating = true
 
     # change default email attribute.
     # Default: `:email`

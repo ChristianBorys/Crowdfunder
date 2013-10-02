@@ -1,4 +1,4 @@
-<%= form_for [@pledges, @projects] do |f| %>
+<%= form_for [@project, @pledge] do |f| %>
 	<% unless f.object.errors.empty? %>
   		<div class="alert alert-error">
     		<strong>Try again after fixing the following things:</strong><br/>
@@ -17,5 +17,8 @@
 	<div class="field">
 		<%= f.label :amount %>
 		<%= f.text_field :amount %>
+	</div>
+	<div class="actions">
+		<%= f.submit "Create Account" %>
 	</div>
 <% end %>

@@ -20,7 +20,7 @@ describe "Pledge Listing" do
       user = setup_signed_in_user
 
       visit project_path(@project)
-      click_link 'Back This Project'
+       click_link 'Back This Project'
 
       # Should be at pledge submission page, with 0 pledges in the databases currently
       expect(current_path).to eq(new_project_pledge_path(@project))

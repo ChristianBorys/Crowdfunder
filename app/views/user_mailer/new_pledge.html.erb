@@ -4,8 +4,8 @@
 
 <p>
 	Good news.
-	Your project <%= link_to @project.title, project_url(@project) %>
-	was just backed <em><%= @backer.name %></em>
+	Your project <strong><%= link_to @project.title, project_url(@project) %></strong>
+	was just backed by <strong><em><%= @backer.name.upcase %></em></strong>
 	for <strong><%= number_to_currency @pledge.amount %></strong>.
 </p>
 
@@ -16,3 +16,4 @@
 	<br/>
 	CrowdFunder team. 
 </p>
+rp

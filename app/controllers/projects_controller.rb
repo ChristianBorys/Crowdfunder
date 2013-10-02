@@ -9,4 +9,10 @@ class ProjectsController < ApplicationController
 
 
 
+protected
+
+  def nav_state
+  	@nav = :projects 
+  end
+
 end
